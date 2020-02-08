@@ -41,6 +41,7 @@ public class TextGameEngine1 : MonoBehaviour
 		{
 			GameObject btn = Instantiate(buttonPrefab) as GameObject;
 			btn.transform.SetParent(parentPanel,true);
+			
 
 			Button tempButton = btn.GetComponent<Button>();
 			tempButton.GetComponentInChildren<Text>().text = s;
