@@ -23,7 +23,9 @@ public class TextAdventure : IAdventure
 	public void ChangeState(string stateName)
 	{
 		if (this.CurrentState.Name == stateName)
+		{
 			return;
+		}
 
 		var newState = this.Locations.Find(l => l.Name == stateName);
 		this.CurrentState = newState;
